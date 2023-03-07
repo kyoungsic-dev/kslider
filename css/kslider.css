@@ -1,0 +1,33 @@
+/* slider main */
+.kslider-main { position: relative; overflow: hidden; }
+.kslider-main .kslider__prev { position: absolute; z-index: 2; cursor: pointer; -webkit-transform: translateY(-50%); transform: translateY(-50%); top: 50%; left: 0; width: 30px; height: 30px; background-image: url(../images/prev_arrow.png); background-repeat: no-repeat; background-size: 15px; background-position: 40%; background-color: transparent; border: none; font-size: 0; cursor: pointer; background-color: rgba(255, 255, 255, .8); }
+.kslider-main .kslider__next { position: absolute; z-index: 2; cursor: pointer; -webkit-transform: translateY(-50%); transform: translateY(-50%); top: 50%; right: 0; width: 30px; height: 30px; background-image: url(../images/next_arrow.png); background-repeat: no-repeat; background-size: 15px; background-position: 60%; background-color: transparent; border: none; font-size: 0; cursor: pointer; background-color: rgba(255, 255, 255, .8); }
+.kslider-main__slides { height: 100%; position: relative; }
+.kslider-main__slide { height: 100%; position: absolute; width: 100%; top: 0; will-change: transform; }
+.kslider-main__slide img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -o-object-position: center; object-position: center; }
+
+/* slider thumbnail */
+.kslider-thumbnail { position: relative; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 100%; margin-left: 5px; overflow: hidden; }
+.kslider-thumbnail .kslider__prev { position: absolute; z-index: 2; cursor: pointer; top: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 30px; height: 30px; background-image: url(../images/up_arrow.png); background-repeat: no-repeat; background-size: 15px; background-position: center; background-color: transparent; border: none; font-size: 0; cursor: pointer; background-color: rgba(255, 255, 255, .8); }
+.kslider-thumbnail .kslider__next { position: absolute; z-index: 2; cursor: pointer; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 30px; height: 30px; background-image: url(../images/down_arrow.png); background-repeat: no-repeat; background-size: 15px; background-position: center; background-color: transparent; border: none; font-size: 0; cursor: pointer; background-color: rgba(255, 255, 255, .8); }
+.kslider-thumbnail__slides { height: 100%; }
+.kslider-thumbnail__slide { position: absolute; height: 50%; width: 100%; }
+.kslider-thumbnail__slide img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -o-object-position: center; object-position: center; }
+
+/* slider dots */
+.kslider-dots { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 1rem; width: 100%; }
+.kslider-dots > button { margin: 0 7px; width: 8px; height: 8px; font-size: 0; background-color: #000; border-radius: 50%; border: none; padding: 0; -webkit-transition: -webkit-transform ease 0.3s; transition: -webkit-transform ease 0.3s; transition: transform ease 0.3s; transition: transform ease 0.3s, -webkit-transform ease 0.3s; }
+.kslider-dots > button.active { -webkit-transform: scale(1.5); transform: scale(1.5); }
+
+/* slider nav */
+.kslider-nav { margin-top: 0.75rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.kslider-nav__btns { margin-right: 1rem; }
+.kslider-nav__current { font-weight: 600; font-size: 16px; }
+.kslider-nav__total { font-weight: 600; font-size: 16px; }
+.kslider-nav__track { position: relative; width: 150px; height: 3px; background-color: #ddd; margin: 0 0.5rem; }
+.kslider-nav__fill { position: absolute; width: 0; top: 0; left: 0; height: 100%; background-color: #000; }
+.kslider-nav__btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.kslider-nav__prev { width: 30px; height: 30px; background-image: url(../images/prev_arrow.png); background-repeat: no-repeat; background-size: 20px; background-position: center; background-color: transparent; border: none; font-size: 0; cursor: pointer; }
+.kslider-nav__next { width: 30px; height: 30px; background-image: url(../images/next_arrow.png); background-repeat: no-repeat; background-size: 20px; background-position: center; background-color: transparent; border: none; font-size: 0; cursor: pointer; }
+.kslider-nav__toggle { width: 30px; height: 30px; background-image: url(../images/pause_icon.png); background-repeat: no-repeat; background-size: 16px; background-position: center; background-color: transparent; border: none; font-size: 0; cursor: pointer; }
+.kslider-nav__toggle.paused { background-image: url(../images/play_icon.png); }
